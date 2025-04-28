@@ -10,9 +10,7 @@ class User {
     console.log(`username:${this.userName}, age:${this.age}`);
   }
 }
-let user1 = new User("Arifa Islam", 23);
-user1.display();
-let user2 = new User("Anika Islam", 16);
-user2.display();
+let user1  =  new User('arifa',20);
+user1.display()
 
-// class onject
+// class object

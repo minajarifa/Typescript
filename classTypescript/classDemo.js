@@ -8,8 +8,6 @@ var User = /** @class */ (function () {
     };
     return User;
 }());
-var user1 = new User("Arifa Islam", 23);
+var user1 = new User('arifa', 20);
 user1.display();
-var user2 = new User("Anika Islam", 16);
-user2.display();
-// class onject
+// class object
