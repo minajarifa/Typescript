@@ -20,7 +20,7 @@ var User = /** @class */ (function () {
         this.age = age;
     }
     User.prototype.display = function () {
-        console.log("hi");
+        console.log("".concat(this.userName));
     };
     return User;
 }());
@@ -32,9 +32,11 @@ var Student = /** @class */ (function (_super) {
         return _this;
     }
     Student.prototype.display = function () {
-        console.log("hi");
+        console.log("username:".concat(this.userName, ","));
     };
     return Student;
 }(User));
 var user1 = new User("arisha", 26);
-user1.display();
+user1.userName = "pinky";
+console.log("user1", user1);
+// user1.userName()
