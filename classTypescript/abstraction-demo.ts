@@ -15,7 +15,3 @@ abstract class User {
     }
  abstract   display(): void 
   }
-//   let student1 = new Student("Keya", 25, 19277);
-//   student1.display();
-//   let user1 = new User("arifa islam", 20);
-//   user1.display(); 
