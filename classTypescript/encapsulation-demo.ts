@@ -1,7 +1,7 @@
 //  provate,public,protected,readonly
 class User {
-  protected userName: string;
-   age: number;
+ readonly userName: string;
+  age: number;
   constructor(userName: string, age: number) {
     this.userName = userName;
     this.age = age;
@@ -11,16 +11,24 @@ class User {
   }
 }
 class Student extends User {
-  studentId: number;
+  private studentId: number;
   constructor(userName: string, age: number, studentId: number) {
     super(userName, age);
     this.studentId = studentId;
   }
   display(): void {
-   console.log(`username:${this.userName},`)
+    console.log(`username:${this.userName},id:${this.studentId}`);
+  }
+  setStudentId(studentId: number): void {
+    this.studentId = studentId;
+  }
+  getStudentId():number{
+    return this.studentId
   }
 }
-let user1= new User("arisha",26);
-user1.userName="pinky"
-console.log("user1",user1);
+let student1 = new Student("minaj apu", 26, 9876);
+student1.setStudentId(203)
+let user1 = new User("arisha", 26);
+ console.log(user1.userName)
+// console.log("user1",user1);
 // user1.userName()

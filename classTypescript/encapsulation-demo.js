@@ -32,11 +32,19 @@ var Student = /** @class */ (function (_super) {
         return _this;
     }
     Student.prototype.display = function () {
-        console.log("username:".concat(this.userName, ","));
+        console.log("username:".concat(this.userName, ",id:").concat(this.studentId));
+    };
+    Student.prototype.setStudentId = function (studentId) {
+        this.studentId = studentId;
+    };
+    Student.prototype.getStudentId = function () {
+        return this.studentId;
     };
     return Student;
 }(User));
+var student1 = new Student("minaj apu", 26, 9876);
+student1.setStudentId(203);
 var user1 = new User("arisha", 26);
-user1.userName = "pinky";
-console.log("user1", user1);
+console.log(user1.userName);
+// console.log("user1",user1);
 // user1.userName()
