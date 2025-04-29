@@ -1,7 +1,3 @@
-import {studentName,studentAge} from"./Student"
-function displayInfo(): void {
-  console.log(`${studentName},${studentAge}`);
-}
-displayInfo();
 
-
+let user1 = new User("arifa islam", 20);
+user1.display();
